@@ -97,4 +97,102 @@ $(document).ready(function () {
     });
 
 
+
+    let cardWidth = $('.testimonial-card').outerWidth();
+    let gap = 20;
+    let totalCards = $('.testimonial-card').length;
+
+    let currentIndex = 0;
+    let cardsPerView;
+    let totalDots;
+
+    function updateSliderLogic() {
+        const windowWidth = $(window).width();
+        if (windowWidth > 1199) {
+            cardsPerView = 3;
+        } else if (windowWidth > 768) {
+            cardsPerView = 2;
+        } else {
+            cardsPerView = 1;
+        }
+
+        totalDots = totalCards - cardsPerView + 1;
+
+        // Re-render dots based on the new total
+        $('.testimonials-dots').empty();
+        for (let i = 0; i < totalDots; i++) {
+            $('.testimonials-dots').append('<div class="testimonials-dot"></div>');
+        }
+        // Ensure current index is within bounds after resize
+        if (currentIndex >= totalDots) {
+            currentIndex = totalDots - 1;
+        }
+
+        // Recalculate card width in case of zoom or other factors
+        cardWidth = $('.testimonial-card').outerWidth();
+
+        updateDots();
+        moveSlider();
+    }
+
+    function updateDots() {
+        $('.testimonials-dot').removeClass('active');
+        $('.testimonials-dot').eq(currentIndex).addClass('active');
+    }
+
+    function moveSlider() {
+        let offset = -currentIndex * (cardWidth + gap);
+        $('.testimonials-grid').css('transform', `translateX(${offset}px)`);
+    }
+
+    $('.testimonials-arrow-right').on('click', function () {
+        if (currentIndex < totalDots - 1) {
+            currentIndex++;
+            moveSlider();
+            updateDots();
+        }
+    });
+
+    $('.testimonials-arrow-left').on('click', function () {
+        if (currentIndex > 0) {
+            currentIndex--;
+            moveSlider();
+            updateDots();
+        }
+    });
+
+    $('.testimonials-dots').on('click', '.testimonials-dot', function () {
+        currentIndex = $(this).index();
+        moveSlider();
+        updateDots();
+    });
+
+    $(window).resize(function () {
+        updateSliderLogic();
+    });
+
+    // Initial setup
+    updateSliderLogic();
+
+
+
+
+
+
+
+
+    $('.faq-list-item .faq-answer').hide();
+
+    $('.faq-list-item .faq-question').on('click', function () {
+        let $parentItem = $(this).closest('.faq-list-item');
+        let $answer = $(this).next('.faq-answer');
+        $answer.slideToggle(300);
+        $parentItem.toggleClass('is-open');
+        $('.faq-list-item .faq-answer').not($answer).slideUp(300);
+        $('.faq-list-item').not($parentItem).removeClass('is-open');
+    });
+
+
+
+
 });

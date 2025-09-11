@@ -21,12 +21,12 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Why choose us</a></li>
-                    <li><a href="#">Locations</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="#">Q&A</a></li>
-                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#marquee">Services</a></li>
+                    <li><a href="#why-choose-us">Why choose us</a></li>
+                    <li><a href="#container-loc">Locations</a></li>
+                    <li><a href="#testimonials-container">Testimonials</a></li>
+                    <li><a href="#faq-section">Q&A</a></li>
+                    <li><a href="#contact-section">Contacts</a></li>
                 </ul>
             </nav>
             <div class="header-buttons">
@@ -47,13 +47,13 @@
         <!-- Mobile Navigation Menu (hidden by default) -->
         <nav id="mobile-nav-menu" class="mobile-nav-menu">
             <ul>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Why choose us</a></li>
-                <li><a href="#">Locations</a></li>
-                <li><a href="#">Testimonials</a></li>
-                <li><a href="#">Q&A</a></li>
-                <li><a href="#">Contacts</a></li>
-                <li><a href="#">Book online</a></li>
+                <li><a href="#marquee">Services</a></li>
+                <li><a href="#why-choose-us">Why choose us</a></li>
+                <li><a href="#container-loc">Locations</a></li>
+                <li><a href="#testimonials-container">Testimonials</a></li>
+                <li><a href="#faq-section">Q&A</a></li>
+                <li><a href="#contact-section">Contacts</a></li>
+                <li><a href="#requestForm">Book online</a></li>
             </ul>
         </nav>
     </header>
@@ -62,25 +62,25 @@
 
     <main>
 
-        <section class="repair-banner">
+        <section id="repair-banner" class="repair-banner">
             <div class="outline-block"></div>
             <div class="banner-left">
-                <p class="service-agitation"><img src="./assets/svg/Ellipse.svg" alt="Ellipse"> Your appliance repair
-                    service
-                    center</p>
+                <p class="service-agitation"><img src="./assets/svg/Ellipse.svg" alt="Ellipse">Your appliance repair
+                    service center</p>
                 <h1>We Fix It Once —<br> You’ll Never Worry Again</h1>
                 <p class="description">Top-notch appliance repair
                     across <strong>all of Orange County</strong> with same-day
                     service and a <strong>Lifetime Warranty</strong> — at prices
                     you can actually afford</p>
                 <div class="cta">
-                    <a href="tel:+17143389438" class="book-btn">Book online</a>
-                    <span class="span-phone">(714) 338-9438</span>
+                    <a href="#requestForm" class="book-btn">Book online</a>
+                    <a href="tel:+17143389438" class="span-phone">(714) 338-9438</a>
                 </div>
             </div>
             <div class="banner-right">
                 <div class="emergency-call">
-                    Emergency call - Sunday & afterwork time <span class="emergency-phone">(714) 889-8844</span>
+                    Emergency call - Sunday & afterwork time <a href="tel:+17148898844" class="emergency-phone">(714)
+                        889-8844</a>
                 </div>
             </div>
         </section>
@@ -94,7 +94,7 @@
                         With the flexible prices.
                     </p>
                 </div>
-                <div class="phone-help">(714) 889-8844</div>
+                <a href="tel:+17148898844" class="phone-help">(714) 889-8844</a>
             </div>
             <div class="image-block-worker">
                 <img src="./assets/img/worker.png" alt="Worker with tools">
@@ -102,7 +102,7 @@
         </section>
 
         <section class="services-name">
-            <div class="marquee">
+            <div id="marquee" class="marquee">
                 <div class="marquee__track">
                     <div>Installation</div>
                     <div>Diagnostic</div>
@@ -147,7 +147,7 @@
             </div>
         </section>
 
-        <section class="container-loc">
+        <section id="container-loc" class="container-loc">
             <div class="image-block left">
                 <img src="./assets/img/image-box.png" alt="Houses">
             </div>
@@ -221,7 +221,7 @@
             <img class="features-back" src="./assets/img/background2.jpg" alt="Kitchen appliances">
         </section>
 
-        <section class="why-choose-us">
+        <section id="why-choose-us" class="why-choose-us">
             <div class="why-img">
                 <img src="./assets/img/image-box3.png" alt="Why choose us">
             </div>
@@ -241,9 +241,9 @@
                 <p>If that sounds like you — we’d be happy to help.</p>
 
                 <div class="why-actions">
-                    <a href="tel:+17143389438" class="book-btn"><img src="/assets/img/phone.png" alt="Phone img">Book
+                    <a href="#requestForm" class="book-btn"><img src="/assets/img/phone.png" alt="Phone img">Book
                         online</a>
-                    <span class="phone">(714) 338-9438</span>
+                    <span href="tel:+17143389438" class="phone">(714) 338-9438</span>
                 </div>
             </div>
         </section>
@@ -283,10 +283,294 @@
             <button class="toggle-btn">Show more</button>
         </section>
 
+
+        <section id="contact-section" class="contact-section">
+            <div class="contact-header">
+                <h2>Don't wait until it gets worse</h2>
+                <p>Your appliances deserve expert care</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-map-wrapper">
+                    <div class="contact-map-container">
+                        <iframe class="medium-map"
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1436.5314347338417!2d-117.80349724184124!3d33.69857944015716!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6672472211ac7c63%3A0x279d98f3c5d92851!2sReliable%20Hands%20Appliance!5e0!3m2!1suk!2sua!4v1757605566474!5m2!1suk!2sua"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe class="small-map"
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1436.5314347338417!2d-117.80349724184124!3d33.69857944015716!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6672472211ac7c63%3A0x279d98f3c5d92851!2sReliable%20Hands%20Appliance!5e0!3m2!1suk!2sua!4v1757605566474!5m2!1suk!2sua"
+                            width="360" height="270" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <div class="contact-info-wrapper">
+                    <div class="contact-info-item">
+                        <h3 class="red-h3">Emergency call:</h3>
+                        <p><a href="tel:+17143389438" class="phone-number">(714) 338-9438</a><br>Sunday & afterwork time
+                        </p>
+                    </div>
+                    <div class="contact-info-item">
+                        <h3>Address:</h3>
+                        <p class="address-center">410 Santa Maria, Irvine, CA, 92606</p>
+                    </div>
+                    <div class="contact-info-item">
+                        <h3>Business hours:</h3>
+                        <p>Mon-Fri (7:00 AM – 7:00 PM)<br>Sat (9:00 AM – 6:00 PM)<br>Sun Emergency call only</p>
+                    </div>
+                    <div class="contact-info-item">
+                        <h3>Email:</h3>
+                        <a class="mailto"
+                            href="mailto:reliablehands.appliance@gmail.com?subject=Service%20Request&body=Hello,%0D%0A%0D%0AMy%20name:%20%0D%0APhone%20number:%20%0D%0AAppliance:%20%0D%0AProblem%20description:%20%0D%0A%0D%0AThank%20you!">reliablehands.appliance@gmail.com</a>
+                    </div>
+                    <div class="contact-info-item">
+                        <h3>Direct line:</h3>
+                        <p><a href="tel:+17143389438" class="phone-number-2">(714) 338-9438</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+        <section id="testimonials-container" class="testimonials-container">
+            <div class="testimonials-header">
+                <h1>Our clients say</h1>
+                <p><img src="./assets/img/google.png" alt="Google logo"> Testimonials</p>
+            </div>
+            <div class="testimonials-content">
+                <button class="testimonials-arrow testimonials-arrow-left">&lt;</button>
+                <div class="testimonials-viewport">
+                    <div class="testimonials-grid">
+                        <div class="testimonial-card">
+                            <div class="testimonial-card-header">
+                                <div class="testimonial-avatar">EW</div>
+                                <div class="testimonial-user-info">
+                                    <h3>Emily Wakefield</h3>
+                                    <p>08/10/2025</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="testimonial-text">
+                                <p>Our service person was very polite and efficient. He ordered the necessary part for
+                                    our Electrolux oven, and returned to install the part a few days later (on a
+                                    Sunday). The price for the service was fair.</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-card-header">
+                                <div class="testimonial-avatar">MG</div>
+                                <div class="testimonial-user-info">
+                                    <h3>MARK GENNARO</h3>
+                                    <p>05/14/2025</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="testimonial-text">
+                                <p>Paul came to my house and immediately assessed the problem with my subzero freezer.
+                                    He
+                                    had to order the part because the freezer was sold, but he got the part and made the
+                                    repair the next day. I would definitely recommend him and will call him again for
+                                    other
+                                    appliance repair.</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-card-header">
+                                <div class="testimonial-avatar">KY</div>
+                                <div class="testimonial-user-info">
+                                    <h3>Kevin Yang</h3>
+                                    <p>02/21/2025</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="testimonial-text">
+                                <p>Excellent service! The technician was professional, punctual, and highly
+                                    knowledgeable.
+                                    They quickly diagnosed the issue with my dishwasher and fixed it efficiently. My
+                                    dishwasher is now working perfectly! I highly recommend their service to anyone in
+                                    need
+                                    of a reliable and skilled repair technician.</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-card-header">
+                                <div class="testimonial-avatar">WC</div>
+                                <div class="testimonial-user-info">
+                                    <h3>Willie Celis</h3>
+                                    <p>01/13/2025</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="testimonial-text">
+                                <p>I had the chance to request their service for the inspection and repair of my old
+                                    Dryer, and the technician was a very knowledgeable person and very organized in
+                                    disassembling and reassembling of my appliance and didn't took a long time and
+                                    zeroed in to the defective parts and was able to replace in a very short time. My
+                                    Dryer is again operational just like the first time they did a repair for another
+                                    issue. Thank you very much.</p>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-card-header">
+                                <div class="testimonial-avatar">MN</div>
+                                <div class="testimonial-user-info">
+                                    <h3>Murad Nuriev</h3>
+                                    <p>09/18/2024</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="testimonial-text">
+                                <p>I recently used Reliable Hands Appliance for refrigerator repair and was very
+                                    impressed.
+                                    The technician arrived on time, was friendly, and quickly diagnosed the issue. The
+                                    repair was done efficiently, and my refrigerator is now working perfectly. The cost
+                                    was
+                                    reasonable with no hidden fees. Highly recommend Reliable Hands Appliance for their
+                                    excellent service.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="testimonials-arrow testimonials-arrow-right">&gt;</button>
+            </div>
+            <div class="testimonials-dots">
+                <div class="testimonials-dot active"></div>
+                <div class="testimonials-dot"></div>
+                <div class="testimonials-dot"></div>
+                <div class="testimonials-dot"></div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <section id="faq-section" class="faq-section">
+            <div class="faq-section-container">
+                <div class="faq-header">
+                    <h2 class="faq-header-title">Q&A</h2>
+                    <h3 class="faq-header-subtitle">Answers on the most common questions</h3>
+                </div>
+
+                <dl class="faq-list">
+                    <div class="faq-list-item">
+                        <dt class="faq-question">How much does it cost to fix my appliance (dryer, washer, refrigerator,
+                            oven, dishwasher, etc.)?</dt>
+                        <dd class="faq-answer">The repair cost depends on the specific issue with your appliance. We are
+                            not able to provide an exact estimate until one of our technicians diagnoses the unit.</dd>
+                    </div>
+
+                    <div class="faq-list-item">
+                        <dt class="faq-question">How much time takes to fix dryer?</dt>
+                        <dd class="faq-answer">More than 70 person units we can fix the same day, and some units and if
+                            needs order the parts,it may take 3 to 7 business days.</dd>
+                    </div>
+
+                    <div class="faq-list-item">
+                        <dt class="faq-question">Are your technicians is certified?</dt>
+                        <dd class="faq-answer">Yes, our technicians are certified, and they are also very experienced
+                            and professional.</dd>
+                    </div>
+
+                    <div class="faq-list-item">
+                        <dt class="faq-question">Which areas you’re servicing?</dt>
+                        <dd class="faq-answer">We can service anywhere in Orange County and LA County.</dd>
+                    </div>
+
+                    <div class="faq-list-item">
+                        <dt class="faq-question">How much service call fee?</dt>
+                        <dd class="faq-answer">Service call fees starting at $75.</dd>
+                    </div>
+
+                    <div class="faq-list-item">
+                        <dt class="faq-question">Are you guys doing with the all brands Appliances services?</dt>
+                        <dd class="faq-answer">Yes we do servicing with the all kind brand,and all kind of Appliances.
+                        </dd>
+                    </div>
+                </dl>
+                <a href="#requestForm">Ask your own question</a>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
         <section class="form-section">
+            <div class="mobile-advantages">
+                <div class="mobile-advantages-title">Book repair now and get</div>
+                <div class="mobile-advantages-text">
+                    <div class="mobile-text-wrapper"><img src="./assets/svg/chek.svg" alt="Chek"> Lifetime warranty</div>
+                    <div class="mobile-text-wrapper"><img src="./assets/svg/chek.svg" alt="Chek"> Affordable pricing</div>
+                    <div class="mobile-text-wrapper"><img src="./assets/svg/chek.svg" alt="Chek"> Same-day service</div>
+                </div>
+            </div>
+            <div class="advantages-title">Book repair now and get</div>
+            <div class="advantages-text">
+                <div class="text-wrapper"><img src="./assets/svg/chek.svg" alt="Chek"> Lifetime warranty</div>
+                <div class="text-wrapper"><img src="./assets/svg/chek.svg" alt="Chek"> Affordable pricing</div>
+                <div class="text-wrapper"><img src="./assets/svg/chek.svg" alt="Chek"> Same-day service</div>
+            </div>
             <div class="form-container">
                 <h2>Send request online</h2>
-                <form id="requestForm" method="post" action="/api/send-request">
+                <form id="requestForm" method="post" action="https://reliablehands-contact-api.onrender.com/">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" placeholder="Your name, please" required>
 
