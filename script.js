@@ -86,14 +86,24 @@ $(document).ready(function () {
             url: $(this).attr("action"),
             type: "POST",
             data: { name, phone, message },
-            success: function () {
+            complete: function () {
+                // Код, що виконується після завершення запиту
                 alert("Request sent successfully!");
                 $("#requestForm")[0].reset();
-            },
-            error: function () {
-                alert("Something went wrong. Please try again.");
             }
         });
+        // $.ajax({
+        //     url: $(this).attr("action"),
+        //     type: "POST",
+        //     data: { name, phone, message },
+        //     success: function () {
+        //         alert("Request sent successfully!");
+        //         $("#requestForm")[0].reset();
+        //     },
+        //     error: function () {
+        //         alert("Something went wrong. Please try again.");
+        //     }
+        // });
     });
 
 
