@@ -8,6 +8,11 @@ $(document).ready(function () {
         $mobileNavMenu.slideToggle(300);
     });
 
+    $('#mobile-nav-menu a').on('click', function () {
+        $mobileNavMenu.slideUp(300);
+        $burgerButton.removeClass('open');
+    });
+
     $(window).on('resize', function () {
         if ($(window).width() >= 768) {
             $mainNav.css('display', 'flex');
@@ -87,7 +92,7 @@ $(document).ready(function () {
             type: "POST",
             data: { name, phone, message },
             complete: function () {
-                $("#form-message").text("Request sent successfully!").css("color", "#90EE90");
+                $("#form-message").text("Request sent successfully!");
 
                 setTimeout(function () {
                     $("#form-message").text("");
@@ -207,6 +212,37 @@ $(document).ready(function () {
     });
 
 
+    let scrollToTopBtn = $('#scrollToTopBtn');
+    let progressRingCircle = $('.progress-ring__circle');
+    let viewportHeight = $(window).height();
+    let radius = progressRingCircle.attr('r');
+    let circumference = 2 * Math.PI * radius;
 
+    progressRingCircle.css({
+        'stroke-dasharray': circumference,
+        'stroke-dashoffset': circumference
+    });
+
+    $(window).scroll(function () {
+        let scrollTop = $(window).scrollTop();
+        let docHeight = $(document).height();
+        let winHeight = $(window).height();
+        let scrollPercent = (scrollTop / (docHeight - winHeight));
+        let offset = circumference - (scrollPercent * circumference);
+
+        progressRingCircle.css('stroke-dashoffset', offset);
+
+        if (scrollTop > viewportHeight) {
+            scrollToTopBtn.addClass('show');
+        } else {
+            scrollToTopBtn.removeClass('show');
+        }
+    });
+
+    scrollToTopBtn.on('click', function () {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 500);
+    });
 
 });
