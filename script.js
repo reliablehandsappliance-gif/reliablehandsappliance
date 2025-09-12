@@ -87,8 +87,12 @@ $(document).ready(function () {
             type: "POST",
             data: { name, phone, message },
             complete: function () {
-                // Код, що виконується після завершення запиту
-                alert("Request sent successfully!");
+                $("#form-message").text("Request sent successfully!").css("color", "#90EE90");
+
+                setTimeout(function () {
+                    $("#form-message").text("");
+                }, 3000);
+
                 $("#requestForm")[0].reset();
             }
         });
