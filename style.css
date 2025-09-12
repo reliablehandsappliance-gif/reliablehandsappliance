@@ -1743,6 +1743,9 @@ h1 {
   .small-map {
     display: block;
   }
+  .contact-info-item p {
+  text-align: center;
+}
 }
 
 
